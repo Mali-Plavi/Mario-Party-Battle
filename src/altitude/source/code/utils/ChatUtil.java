@@ -5,14 +5,12 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class ChatUtil {
-	public void Brodcast(String msg){
+	public static void Broadcast(String msg){
 		for(Player p : Bukkit.getOnlinePlayers()){
-			p.sendMessage(Brodcaster() + msg);
+			p.sendMessage(Broadcaster() + msg);
 		}
-		
 	}
-	
-	private String Brodcaster() {
+	private static String Broadcaster() {
 		return ChatColor.DARK_AQUA + "[Mario Party Battle] " + ChatColor.GOLD;
 	}
 	
